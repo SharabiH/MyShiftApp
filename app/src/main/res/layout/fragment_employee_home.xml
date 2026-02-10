@@ -11,25 +11,27 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:gravity="center_vertical">
-
-        <TextView
-            android:id="@+id/tvWelcome"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:textColor="#4A63E7"
-            android:layout_weight="1"
-            android:text="Welcome"
-            android:textSize="20sp"
-            android:textStyle="bold" />
+        android:gravity="center_vertical"
+        android:layout_marginTop="32dp"> <TextView
+        android:id="@+id/tvWelcome"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="#4A63E7"
+        android:layout_weight="1"
+        android:text="Welcome"
+        android:textSize="27sp"
+        android:textStyle="bold" />
 
         <ImageButton
             android:id="@+id/btnMenu"
             android:layout_width="48dp"
             android:layout_height="48dp"
-            android:background="@android:color/transparent"
+            android:layout_gravity="center_vertical"
+            android:background="?attr/selectableItemBackgroundBorderless"
             android:contentDescription="Menu"
-            android:src="@android:drawable/ic_menu_more" />
+            android:scaleType="fitCenter"
+            android:padding="10dp"
+            android:src="@drawable/ic_hamburger" />
     </LinearLayout>
 
     <TextView
@@ -38,6 +40,5 @@
         android:layout_marginTop="24dp"
         android:text="Employee Home (placeholder)"
         android:textColor="#4A63E7" />
-
 
 </LinearLayout>

@@ -7,30 +7,30 @@
     android:padding="16dp"
     android:background="@drawable/background_login">
 
-    <!-- Top row: Welcome + Menu button -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_vertical"
-        android:orientation="horizontal">
-
-        <TextView
-            android:id="@+id/tvWelcome"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Welcome"
-            android:textColor="#4A63E7"
-            android:textSize="20sp"
-            android:textStyle="bold" />
+        android:orientation="horizontal"
+        android:layout_marginTop="32dp"> <TextView
+        android:id="@+id/tvWelcome"
+        android:layout_width="0dp" android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Welcome"
+        android:textColor="#4A63E7"
+        android:textSize="27sp"
+        android:textStyle="bold" />
 
         <ImageButton
             android:id="@+id/btnMenu"
             android:layout_width="48dp"
             android:layout_height="48dp"
-            android:background="@android:color/transparent"
+            android:layout_gravity="center_vertical"
+            android:background="?attr/selectableItemBackgroundBorderless"
             android:contentDescription="Menu"
-            android:src="@android:drawable/ic_menu_more" />
+            android:scaleType="fitCenter"
+            android:padding="10dp"
+            android:src="@drawable/ic_hamburger" />
     </LinearLayout>
 
     <TextView
@@ -40,7 +40,11 @@
         android:text="Manager Home (placeholder)"
         android:textColor="#4A63E7" />
 
-    <!-- Debug button: Seed demo data -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
     <Button
         android:id="@+id/btnSeedDemo"
         android:layout_width="match_parent"
