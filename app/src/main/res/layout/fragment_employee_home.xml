@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@drawable/background_login"
     android:padding="16dp">
 
     <LinearLayout
@@ -16,6 +17,7 @@
             android:id="@+id/tvWelcome"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:textColor="#4A63E7"
             android:layout_weight="1"
             android:text="Welcome"
             android:textSize="20sp"
@@ -34,6 +36,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
-        android:text="Employee Home (placeholder)" />
+        android:text="Employee Home (placeholder)"
+        android:textColor="#4A63E7" />
+
 
 </LinearLayout>
