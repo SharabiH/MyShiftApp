@@ -8,6 +8,12 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:padding="24dp">
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Back" />
 
         <TextView
             android:id="@+id/tvTitle"
@@ -47,12 +53,7 @@
             android:layout_height="wrap_content"
             android:text="View Full Schedule"
             android:layout_marginTop="12dp"/>
-        <Button
-            android:id="@+id/btnBack"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="12dp"
-            android:text="Back" />
+
 
     </LinearLayout>
 </ScrollView>

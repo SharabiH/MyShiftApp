@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
 
     // Manager menu items
     private TextView menuManagerSettings, menuManagerEmployees, menuManagerBuildSchedule;
-    private TextView menuManagerAttendanceApprovals, menuManagerPayslips;
+    private TextView menuManagerAttendanceApprovals;
 
     // Shared
     private TextView menuLogout;
@@ -63,7 +63,6 @@ public class MainActivity extends AppCompatActivity {
         menuManagerEmployees = findViewById(R.id.menuManagerEmployees);
         menuManagerBuildSchedule = findViewById(R.id.menuManagerBuildSchedule);
         menuManagerAttendanceApprovals = findViewById(R.id.menuManagerAttendanceApprovals);
-        menuManagerPayslips = findViewById(R.id.menuManagerPayslips);
 
 // Shared
         menuLogout = findViewById(R.id.menuLogout);
@@ -122,12 +121,8 @@ public class MainActivity extends AppCompatActivity {
             closeRightDrawer();
         });
 
-        menuManagerPayslips.setOnClickListener(v -> {
-            Log.d("MENU_CLICK", "Manager Payslips clicked");
-// Option A: Payslips per employee (using the existing EmployeePayslipsFragment)
-            safeNavigate(R.id.employeePayslipsFragment);
-            closeRightDrawer();
-        });
+
+
 
 // Logout (shared)
         menuLogout.setOnClickListener(v -> {
@@ -231,7 +226,6 @@ public class MainActivity extends AppCompatActivity {
         menuManagerEmployees.setVisibility(v);
         menuManagerBuildSchedule.setVisibility(v);
         menuManagerAttendanceApprovals.setVisibility(v);
-        menuManagerPayslips.setVisibility(v);
     }
 
     private void updateDividerVisibility() {
